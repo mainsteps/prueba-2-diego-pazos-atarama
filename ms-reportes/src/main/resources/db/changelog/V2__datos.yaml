@@ -1,0 +1,26 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2
+      author: diego
+      changes:
+        - insert:
+            tableName: reporte
+            columns:
+              - column:
+                  name: titulo
+                  value: "Reporte inicial de reservas"
+              - column:
+                  name: descripcion
+                  value: "Reporte consolidado de reservas y pagos"
+              - column:
+                  name: cantidad_reservas
+                  valueNumeric: 3
+              - column:
+                  name: monto_total_pagos
+                  valueNumeric: 255000
+              - column:
+                  name: generado
+                  valueBoolean: true
+              - column:
+                  name: fecha_generacion
+                  valueDate: "2026-05-14"
